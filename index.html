@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма оплати</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="paypal">
+        <div class="step">
+            <img src="foto/free-icon-pc-4270416.png" alt="pc" class="foto">
+            <p>1. Streamer configuration</p>
+        </div>
+        <div class="step">
+            <img src="foto/free-icon-website-484656.png" alt="website" class="foto">
+            <p>2. Your personal details</p>
+        </div>
+        <div class="step">
+            <img src="foto/free-icon-web-window-5435383.png" alt="web"  class="active-icon">
+            <p>3. Payment method</p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="payment-summary-container">
+            <div class="payment-methods">
+                <h2>Виберіть спосіб оплати</h2>
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                    <img src="foto/free-icon-paypal-196566.png" alt="PayPal" class="payment-icon-paypal">
+                    <p class="text">Безпечна оплата онлайн. Необхідний акаунт PayPal.</p>
+                </div>
+    
+                <div class="payment-option">
+                    <div class="credit-card-icons">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                        <label for="credit-card">Кредитна картка</label>
+                        <img src="foto/free-icon-credit-card-10445271.png" alt="Credit Card">
+                        <img src="foto/free-icon-credit-card-10445730.png" alt="Credit Card">
+                        <img src="foto/free-icon-credit-card-10446499.png" alt="Credit Card">
+                        <img src="foto/free-icon-credit-card-10446514.png" alt="Credit Card">
+                    </div>
+                    <p class="text">Безпечний переказ грошей за допомогою вашого банківського рахунку</p><hr>
+                    <form action="#" method="post" class="credit-card-form">
+                        <div class="form-group">
+                            <label for="card-number">Номер картки:</label>
+                            <input type="text" id="card-number" name="card-number" placeholder="6665 8844 2233 5599" required>
+                        </div>
+                           
+                        <div class="form-group flex-group">
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="expiry-date">Термін дії:</label>
+                                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="name-on-card">Ім'я на картці:</label>
+                            <input type="text" id="name-on-card" name="name-on-card" placeholder="Ім'я Прізвище" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h2>Підсумок</h2>                
+                <p>Пакет: <strong>Повний пакет (100+ каналів)</strong></p>
+                <p>Тривалість: <strong>3 місяці</strong></p>
+                <hr class="kol">
+                <p>Ціна: <strong class="price">$159.99</strong></p>
+                <p>Знижка: <strong class="price">€0.00</strong></p>
+                <p>Знижка за подарункову карту: <strong class="price">€0.00</strong></p>
+                <hr class="kol">
+                <p class="total-price">Загальна вартість: <strong >€159.99</strong></p>
+
+                    <div class="summary1">
+                        <div class="item">
+                            <img src="foto/free-icon-box-679720.png" alt="box icon" class="foto1">
+                            <div class="pole">
+                                <h3><strong>Інформація про доставку товарів</strong></h3>
+                                <p>Lorem ipsum — це типовий текст, який використовується як заглушка для макетів. Він допомагає візуалізувати кінцевий вигляд сторінки.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <img src="foto/free-icon-wallet-with-card-sticking-out-83203.png" alt="wallet icon" class="foto1">
+                            <div class="pole">
+                                <h3><strong>30 днів гарантії повернення коштів</strong></h3>
+                                <p>Всупереч поширеній думці, текст Lorem Ipsum не є випадковим набором слів, а має багату історію і використовується з давніх часів.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="final-line"></div>
+
+        <div class="buttons-container">
+            <button class="back">Повернутися назад</button>
+            
+            <div class="checkout-section">
+                <p class="checkout-text">Натиснувши кнопку оплати, ви погоджуєтеся з нашими умовами 
+                    та гарантією повернення грошей. Дякуємо, що довіряєте нашому сервісу</p>
+                <button class="checkout">Підтвердити <span>&#8594;</span></button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
